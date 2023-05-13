@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
+import styles from 'Button.module.css'
 
-function Button({ variant, disabled, children }) {
+const Button = ({ variant, disabled, children }) => {
   return (
     <button
       className={`${styles.wrapper} ${styles[variant]}`}
@@ -8,7 +9,7 @@ function Button({ variant, disabled, children }) {
     >
       {children}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button

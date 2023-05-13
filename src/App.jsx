@@ -1,9 +1,5 @@
-import styles from "./App.module.css";
-import "./utilities/utils";
-import { useState } from "react";
-
-function App() {
-  return <></>;
+const App = () => {
+  return <></>
 }
 
-export default App;
+export default App
