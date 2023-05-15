@@ -10,10 +10,6 @@ export const useDarkMode = () => {
   React.useEffect(() => {
     document.body.setAttribute('data-theme', isDarkMode)
     window.localStorage.setItem('data-theme', isDarkMode)
-
-    return () => {
-      window.localStorage.removeItem('data-theme')
-    }
   }, [isDarkMode])
 
   const themeSwitcher = () => {

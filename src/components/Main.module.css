@@ -1,0 +1,7 @@
+@import '/src/styles/abstracts.css';
+
+.definition-container {
+  width: calc(100% - 3rem);
+  max-width: 46.063rem;
+  margin-inline: auto;
+}
