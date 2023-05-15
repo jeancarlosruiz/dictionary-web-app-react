@@ -1,0 +1,133 @@
+/* :root[data-theme='light'] { */
+[data-theme='light'] {
+  --body-bg-clr: hsl(0, 0%, 100%);
+  --body-font-clr: hsl(0, 0%, 18%);
+  --menu-bg-clr: var(--body-bg-clr);
+  --box-shadow-clr: hsla(0, 0%, 0%, 0.1);
+  --ff-selection-clr: hsl(274, 82%, 60%);
+  --ball-bg-clr: hsl(0, 0%, 100%);
+  --toogle-bg-clr: hsla(0, 0%, 46%, 1);
+  --moon-clr: var(--toogle-bg-clr);
+  --search-bg-clr: hsla(0, 0%, 96%, 1);
+  --error-clg: hsla(0, 100%, 66%, 1);
+  --purple-clr: hsl(274, 82%, 60%);
+
+  /* Font Family */
+
+  --ff-san-serif: 'inter';
+  --ff-serif: 'lora';
+  --ff-mono: 'inconsolata';
+
+  /* Font sizes */
+  /* Clamps */
+
+  /* 900: 32px - 64px */
+  --fs-900: clamp(2rem, 0.7845rem + 0.9195vw, 4rem);
+  /* 800: 18px - 24px */
+  --fs-800: clamp(1.125rem, 0.8017rem + 1.3793vw, 1.5rem);
+  /* 700: 16px - 20px */
+  --fs-700: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
+  /* 600: 14px - 18px */
+  --fs-600: clamp(0.875rem, 0.6595rem + 0.9195vw, 1.125rem);
+  /* 500: 15px - 18px */
+  --fs-500: clamp(0.9375rem, 0.7759rem + 0.6897vw, 1.125rem);
+  /* Statics  */
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+}
+
+/* :root[data-theme='dark'] { */
+[data-theme='dark'] {
+  --body-bg-clr: hsl(0, 0%, 2%);
+  --body-font-clr: hsl(0, 0%, 100%);
+  --menu-bg-clr: hsl(0, 0%, 12%);
+  --box-shadow-clr: hsl(274, 82%, 60%);
+  --ff-selection-clr: hsl(274, 82%, 60%);
+  --ball-bg-clr: hsl(0, 0%, 100%);
+  --toogle-bg-clr: hsl(274, 82%, 60%);
+  --transformX: translateX(140%);
+  --moon-clr: var(--toogle-bg-clr);
+  --search-bg-clr: hsla(0, 0%, 12%, 1);
+  --error-clg: hsla(0, 100%, 66%, 1);
+  --purple-clr: hsl(274, 82%, 60%);
+
+  /* Font Family */
+
+  --ff-san-serif: 'inter';
+  --ff-serif: 'lora';
+  --ff-mono: 'inconsolata';
+
+  /* Font sizes */
+  /* Clamps */
+
+  /* 900: 32px - 64px */
+  --fs-900: clamp(2rem, 0.7845rem + 0.9195vw, 4rem);
+  /* 800: 18px - 24px */
+  --fs-800: clamp(1.125rem, 0.8017rem + 1.3793vw, 1.5rem);
+  /* 700: 16px - 20px */
+  --fs-700: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
+  /* 600: 14px - 18px */
+  --fs-600: clamp(0.875rem, 0.6595rem + 0.9195vw, 1.125rem);
+  /* 500: 15px - 18px */
+  --fs-500: clamp(0.9375rem, 0.7759rem + 0.6897vw, 1.125rem);
+  /* Statics  */
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+}
+
+/* INTER */
+@font-face {
+  font-family: 'inter';
+  src: url(../../fonts/inter/Inter-Regular.woff2) format('woff2'),
+    url(../../fonts/inter/Inter-Regular.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url(../../fonts/inter/Inter-Bold.woff2) format('woff2'),
+    url(../../fonts/inter/Inter-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
+/* LORA */
+@font-face {
+  font-family: 'lora';
+  src: url(../../fonts/lora/Lora-Regular.woff2) format('woff2'),
+    url(../../fonts/lora/Lora-Regular.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'lora';
+  src: url(../../fonts/lora/Lora-Bold.woff2) format('woff2'),
+    url(../../fonts/lora/Lora-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'lora';
+  src: url(../../fonts/lora/Lora-BoldItalic.woff2) format('woff2'),
+    url(../../fonts/lora/Lora-BoldItalic.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* INCONSOLATA */
+@font-face {
+  font-family: 'inconsolata';
+  src: url(../../fonts/inconsolata/Inconsolata-Regular.woff2) format('woff2'),
+    url(../../fonts/inconsolata/Inconsolata-Regular.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'inconsolata';
+  src: url(../../fonts/inconsolata/Inconsolata-Bold.woff2) format('woff2'),
+    url(../../fonts/inconsolata/Inconsolata-Bold.woff) format('woff');
+  font-weight: 700;
+}
+
+body {
+  transition: 0.25s ease-in-out;
+}

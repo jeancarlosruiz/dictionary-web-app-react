@@ -1,0 +1,10 @@
+@import '/src/styles/abstracts.css';
+
+body {
+  /* font-family: ; */
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--body-bg-clr);
+  color: var(--body-font-clr);
+}

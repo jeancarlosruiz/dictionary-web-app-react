@@ -1,0 +1,72 @@
+@import '/src/styles/abstracts.css';
+
+.dropdown {
+  min-width: 6.875rem;
+  font-size: var(--fs-600);
+  font-weight: 700;
+  padding-inline-end: 1rem;
+  border-right: 1px solid hsla(0, 0%, 91%, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.arrow {
+  transition: 275ms ease;
+}
+
+.arrow.active {
+  transition: 275ms ease;
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  width: 8.75rem;
+  height: 7.5rem;
+  background-color: var(--menu-bg-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding-block: 1.125rem;
+  padding-inline: 1.125rem;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-30%);
+  z-index: 5;
+  box-shadow: 0px 5px 30px var(--box-shadow-clr);
+}
+
+@media (min-width: 45em) {
+  .menu {
+    width: 11.375rem;
+    height: 9.5rem;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+  }
+}
+
+.menu li {
+  cursor: pointer;
+  transition: 275ms ease;
+}
+
+.menu li:hover {
+  color: var(--ff-selection-clr);
+  /* transform: scale(1.1); */
+}
+
+.serif {
+  font-family: var(--ff-serif);
+}
+
+.mono {
+  font-family: var(--ff-mono);
+}

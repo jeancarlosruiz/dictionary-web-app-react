@@ -1,0 +1,40 @@
+.theme-toogle {
+  padding-inline-start: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--toogle-bg-clr);
+  padding-block: 0.188rem;
+  padding-inline: 0.188rem;
+  border-radius: 0.625rem;
+  width: 2.5rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background-color: var(--ball-bg-clr);
+  transform: var(--transformX);
+  transition: 275ms ease;
+}
+
+.moon path {
+  stroke: var(--moon-clr);
+}
