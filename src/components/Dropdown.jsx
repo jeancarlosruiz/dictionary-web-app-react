@@ -4,19 +4,27 @@ import styles from './Dropdown.module.css'
 import { fontFamilyObj } from '../utils/fontFamilyObj'
 import { ReactComponent as Arrow } from '../../public/images/icon-arrow-down.svg'
 
-const Dropdown = ({ isActive, setIsActive, handleFont }) => {
+const Dropdown = ({ handleFont }) => {
   const [selected, setSelected] = React.useState('San Serif')
+  const [isActive, setIsActive] = React.useState(false)
+
   console.info('Dropdown render')
 
-  const arrowClass = isActive
-    ? `${styles.arrow} ${styles.active}`
-    : styles.arrow
+  const handleFontChanges = React.useCallback((value) => {
+    const fontSelected = value
+
+    return handleFont(fontSelected)
+  }, [handleFont])
+
+  const arrowTransition = isActive
+    ? 'rotate(180deg)'
+    : 'rotate(0)'
 
   return (
     <div className={styles.dropdown}>
       <div className={styles.wrapper} onClick={() => setIsActive(!isActive)}>
         <span>{selected}</span>
-        <Arrow className={arrowClass} />
+        <Arrow className={styles.arrow} style={{ transform: arrowTransition }} />
       </div>
       {isActive && (
         <ul className={styles.menu}>
@@ -27,7 +35,7 @@ const Dropdown = ({ isActive, setIsActive, handleFont }) => {
               onClick={() => {
                 setIsActive(!isActive)
                 setSelected(option.value)
-                handleFont(option.fontFamily)
+                handleFontChanges(option.fontFamily)
               }}
             >
               {option.value}

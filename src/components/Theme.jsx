@@ -1,11 +1,15 @@
 import React from 'react'
+import { useDarkMode } from '../utils/useDarkMode'
 
 import VisuallyHidden from './VisuallyHidden'
 import { ReactComponent as Moon } from '../../public/images/icon-moon.svg'
 import styles from './Theme.module.css'
 
-const Theme = ({ themeSwitcher }) => {
+const Theme = () => {
+  const themeSwitcher = useDarkMode()
+
   console.info('Theme render')
+
   return (
     <div className={styles['theme-toogle']}>
       <input type='checkbox' id='checkbox' className={styles.checkbox} />
@@ -17,4 +21,5 @@ const Theme = ({ themeSwitcher }) => {
   )
 }
 
-export default Theme
+const pureComponent = React.memo(Theme)
+export default pureComponent

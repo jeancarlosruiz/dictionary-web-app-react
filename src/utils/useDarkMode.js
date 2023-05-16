@@ -17,5 +17,5 @@ export const useDarkMode = () => {
     return setIsDarkMode(newTheme)
   }
 
-  return { themeSwitcher }
+  return themeSwitcher
 }

@@ -21,11 +21,6 @@
   transition: 275ms ease;
 }
 
-.arrow.active {
-  transition: 275ms ease;
-  transform: rotate(180deg);
-}
-
 .menu {
   position: absolute;
   width: 8.75rem;
