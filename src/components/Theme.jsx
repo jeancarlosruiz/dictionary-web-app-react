@@ -21,5 +21,4 @@ const Theme = () => {
   )
 }
 
-const pureComponent = React.memo(Theme)
-export default pureComponent
+export default Theme

@@ -1,17 +1,38 @@
 import React from 'react'
+// import useSWR from 'swr'
 
 import VisuallyHidden from './VisuallyHidden'
 
 import { hiddenStyles } from '../utils/visuallyHidden'
 import { ReactComponent as SearchIcon } from '../../public/images/icon-search.svg'
+import { ENDPOINT } from '../utils/endpoint'
 import styles from './SearchForm.module.css'
 
 const SearchForm = () => {
+  const [tentativeWord, setTentativeWord] = React.useState('')
   const [word, setWord] = React.useState('')
+  const [data, setData] = React.useState('')
+
+  const url = ENDPOINT + word
+
+  React.useEffect(() => {
+    if (word !== '') {
+      async function runEffect () {
+        const response = await fetch(url)
+        const json = await response.json()
+
+        setData(json[0])
+      }
+
+      runEffect()
+    }
+  }, [word])
+
+  console.log(data)
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(word)
+    setWord(tentativeWord)
   }
 
   return (
@@ -24,10 +45,10 @@ const SearchForm = () => {
         className={styles['word-search']}
         type='text'
         placeholder='Search for any word…'
-        value={word}
+        value={tentativeWord}
         onChange={(e) => {
           const newWord = e.target.value
-          setWord(newWord)
+          setTentativeWord(newWord)
         }}
       />
 
