@@ -1,0 +1,75 @@
+@import '/src/styles/abstracts.css';
+
+.container {
+  margin-block-start: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.word-title {
+  font-size: var(--fs-900);
+  /* font-weight: bold; */
+}
+
+.word-phonetic {
+  margin-block-start: 0.5rem;
+  color: var(--purple-clr);
+  font-size: var(--fs-800);
+}
+
+.play-icon {
+  & path,
+  circle {
+    transition: 275ms ease;
+  }
+
+  &:hover path {
+    fill: hsl(0, 0%, 100%);
+  }
+  &:hover circle {
+    opacity: 1;
+  }
+}
+
+/* @include mq(medium) {
+  width: 4.688rem;
+  height: 4.688rem;
+} */
+
+.partOfSpeech {
+  width: 100%;
+  font-style: italic;
+  font-weight: 700;
+  margin-inline-end: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+& .line {
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0, 0%, 23%, 1);
+}
+
+.meaning-title {
+  color: hsla(0, 0%, 46%, 1);
+}
+
+.meaning-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.punto {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--purple-clr);
+  border-radius: 50%;
+}

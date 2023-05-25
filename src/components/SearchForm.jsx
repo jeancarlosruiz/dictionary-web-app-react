@@ -1,34 +1,24 @@
 import React from 'react'
-// import useSWR from 'swr'
 
 import VisuallyHidden from './VisuallyHidden'
 
 import { hiddenStyles } from '../utils/visuallyHidden'
 import { ReactComponent as SearchIcon } from '../../public/images/icon-search.svg'
-import { ENDPOINT } from '../utils/endpoint'
 import styles from './SearchForm.module.css'
 
-const SearchForm = () => {
+const SearchForm = ({ setWord, status }) => {
   const [tentativeWord, setTentativeWord] = React.useState('')
-  const [word, setWord] = React.useState('')
-  const [data, setData] = React.useState('')
 
-  const url = ENDPOINT + word
+  // Unique id for the search input
+  const id = React.useId()
+  const inputId = `${id}word-search`
+
+  const inputRef = React.useRef()
 
   React.useEffect(() => {
-    if (word !== '') {
-      async function runEffect () {
-        const response = await fetch(url)
-        const json = await response.json()
-
-        setData(json[0])
-      }
-
-      runEffect()
-    }
-  }, [word])
-
-  console.log(data)
+    // Focus on the search input once the component render
+    inputRef.current.focus()
+  }, [])
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -37,11 +27,14 @@ const SearchForm = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label htmlFor='word-search' style={hiddenStyles}>
+      <label htmlFor={inputId} style={hiddenStyles}>
         Word search label
       </label>
       <input
-        id='word-search'
+        id={inputId}
+        ref={inputRef}
+        required
+        disabled={status === 'loading'}
         className={styles['word-search']}
         type='text'
         placeholder='Search for any word…'
@@ -52,7 +45,7 @@ const SearchForm = () => {
         }}
       />
 
-      <button className={styles.button} type='submit'>
+      <button disabled={status === 'loading'} className={styles.button} type='submit'>
         <VisuallyHidden>Button search</VisuallyHidden>
         <SearchIcon />
       </button>

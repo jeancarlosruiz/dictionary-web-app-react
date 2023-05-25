@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+@media (min-width: 45em) {
+  .form {
+    margin-block-start: 3.219rem;
+  }
+}
+
 .word-search {
   width: 100%;
   background-color: var(--search-bg-clr);
@@ -17,7 +23,6 @@
   color: var(--body-font-clr);
   border-radius: 1rem;
   border: transparent;
-  /* transition: 275ms ease; */
 }
 
 .word-search:focus {
