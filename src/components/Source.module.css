@@ -1,0 +1,18 @@
+@import '/src/styles/abstracts.css';
+
+.wrapper {
+  margin-block: 2rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid hsla(0, 0%, 23%, 1);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+}
+
+.source-title {
+  font-size: 0.875rem;
+  color: hsla(0, 0%, 46%, 1);
+  font-weight: 400;
+  text-decoration: underline;
+  margin-block-end: 0.5rem;
+}

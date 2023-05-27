@@ -3,20 +3,17 @@
 .form {
   position: relative;
   margin-block-start: 1.5rem;
-  display: flex;
-  align-items: center;
 }
 
-@media (min-width: 45em) {
-  .form {
-    margin-block-start: 3.219rem;
-  }
+.wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .word-search {
   width: 100%;
   background-color: var(--search-bg-clr);
-  padding-block: 0.625rem;
+  padding-block: 1rem;
   padding-inline: 1.5rem;
   font-weight: 700;
   font-size: var(--fs-700);
@@ -45,8 +42,18 @@
 
 .error-msg {
   color: var(--error-clg);
-  margin-block-start: 0.5;
-  font-size: var(--fs-700);
+  margin-block-start: 0.8rem;
+  font-size: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
+}
+
+@media (min-width: 45em) {
+  .form {
+    margin-block-start: 3.219rem;
+  }
+  .word-search {
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+  }
 }
 
 /* .prueba {

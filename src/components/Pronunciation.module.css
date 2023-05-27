@@ -1,0 +1,41 @@
+@import '/src/styles/abstracts.css';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: clamp(2rem, 0.2759rem + 7.3563vw, 4rem);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.word-phonetic {
+  margin-block-start: 0.5rem;
+  color: var(--purple-clr);
+  font-size: clamp(1.125rem, 0.8017rem + 1.3793vw, 1.5rem);
+}
+
+.play-icon {
+  cursor: pointer;
+}
+
+.play-icon:hover path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.play-icon:hover circle {
+  opacity: 1;
+}
+
+.play-icon path,
+circle {
+  transition: 275ms ease;
+}
+
+/* @include mq(medium) {
+    width: 4.688rem;
+    height: 4.688rem;
+  } */

@@ -2,7 +2,7 @@
 
 .dropdown {
   min-width: 6.875rem;
-  font-size: var(--fs-600);
+  font-size: clamp(0.875rem, 0.6595rem + 0.9195vw, 1.125rem);
   font-weight: 700;
   padding-inline-end: 1rem;
   border-right: 1px solid hsla(0, 0%, 91%, 1);
@@ -58,10 +58,10 @@
   /* transform: scale(1.1); */
 }
 
-.serif {
+/* .serif {
   font-family: var(--ff-serif);
 }
 
 .mono {
   font-family: var(--ff-mono);
-}
+} */

@@ -21,19 +21,21 @@
   /* Font sizes */
   /* Clamps */
 
-  /* 900: 32px - 64px */
-  --fs-900: clamp(2rem, 0.7845rem + 0.9195vw, 4rem);
-  /* 800: 18px - 24px */
+  /*
+  /* 900: 32px - 64px 
+  --fs-900: clamp(2rem, 0.2759rem + 7.3563vw, 4rem);
+  /* 800: 18px - 24px 
   --fs-800: clamp(1.125rem, 0.8017rem + 1.3793vw, 1.5rem);
-  /* 700: 16px - 20px */
+  /* 700: 16px - 20px 
   --fs-700: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
-  /* 600: 14px - 18px */
+  /* 600: 14px - 18px 
   --fs-600: clamp(0.875rem, 0.6595rem + 0.9195vw, 1.125rem);
-  /* 500: 15px - 18px */
+  /* 500: 15px - 18px 
   --fs-500: clamp(0.9375rem, 0.7759rem + 0.6897vw, 1.125rem);
-  /* Statics  */
+  /* Statics  
   --fs-400: 1.125rem;
   --fs-300: 1rem;
+  */
 }
 
 /* :root[data-theme='dark'] { */
@@ -60,19 +62,20 @@
   /* Font sizes */
   /* Clamps */
 
-  /* 900: 32px - 64px */
+  /* 900: 32px - 64px 
   --fs-900: clamp(2rem, 0.7845rem + 0.9195vw, 4rem);
-  /* 800: 18px - 24px */
+  /* 800: 18px - 24px 
   --fs-800: clamp(1.125rem, 0.8017rem + 1.3793vw, 1.5rem);
-  /* 700: 16px - 20px */
+  /* 700: 16px - 20px 
   --fs-700: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
-  /* 600: 14px - 18px */
+  /* 600: 14px - 18px 
   --fs-600: clamp(0.875rem, 0.6595rem + 0.9195vw, 1.125rem);
-  /* 500: 15px - 18px */
+  /* 500: 15px - 18px 
   --fs-500: clamp(0.9375rem, 0.7759rem + 0.6897vw, 1.125rem);
-  /* Statics  */
+  /* Statics  
   --fs-400: 1.125rem;
   --fs-300: 1rem;
+  */
 }
 
 /* INTER */
@@ -130,4 +133,6 @@
 
 body {
   transition: 0.25s ease-in-out;
+  line-height: 1.5;
+  color: var(--body-font-clr);
 }
