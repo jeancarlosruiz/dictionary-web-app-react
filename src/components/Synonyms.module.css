@@ -1,0 +1,16 @@
+@import '/src/styles/abstracts.css';
+
+.synonyms-title {
+  display: inline-flex;
+  align-items: center;
+  color: hsla(0, 0%, 46%, 1);
+  margin-block-start: 1.5rem;
+  font-size: clamp(1rem, 0.7845rem + 0.9195vw, 1.25rem);
+  font-weight: 400;
+  gap: 1.25rem;
+}
+
+.synonyms {
+  color: var(--purple-clr);
+  font-weight: 700;
+}

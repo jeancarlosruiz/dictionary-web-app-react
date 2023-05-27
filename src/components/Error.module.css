@@ -1,0 +1,26 @@
+@import '/src/styles/abstracts.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-block-start: 8.25rem;
+}
+
+.title {
+  font-size: clamp(1.5rem, 1.25rem + 1.3793vw, 2.5rem);
+  font-weight: 700;
+  margin-block-end: 1.5rem;
+}
+
+.message {
+  font-size: 1.125rem;
+  color: hsla(0, 0%, 46%, 1);
+}
+
+.resolution {
+  color: var(--purple-clr);
+  margin-block-start: 0.8rem;
+}

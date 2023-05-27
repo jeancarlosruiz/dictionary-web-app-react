@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './DefinitionContainer.module.css'
+import Loading from './Loading'
+import Error from './Error'
 import Pronunciation from './Pronunciation'
 import Meanings from './Meanings'
 import Source from './Source'
@@ -7,7 +9,7 @@ import Source from './Source'
 const DefinitionContainer = ({ data, status }) => {
   return (
     <section className={styles.container}>
-      {status === 'loading' && <h1>Hello, Cargando</h1>}
+      {status === 'loading' && <Loading />}
       {status === 'success' && (
         <>
           <Pronunciation data={data} />
@@ -15,7 +17,7 @@ const DefinitionContainer = ({ data, status }) => {
           <Source data={data} />
         </>
       )}
-      {status === 'error' && <h1>{data.title}</h1>}
+      {status === 'error' && <Error data={data} />}
     </section>
   )
 }

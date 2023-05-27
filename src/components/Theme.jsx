@@ -8,8 +8,6 @@ import styles from './Theme.module.css'
 const Theme = () => {
   const themeSwitcher = useDarkMode()
 
-  console.info('Theme render')
-
   return (
     <div className={styles['theme-toogle']}>
       <input type='checkbox' id='checkbox' className={styles.checkbox} />

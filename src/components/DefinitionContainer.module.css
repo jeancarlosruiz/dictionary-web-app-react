@@ -3,37 +3,3 @@
 .container {
   margin-block-start: 1.5rem;
 }
-
-/* .partOfSpeech {
-  width: 100%;
-  font-style: italic;
-  font-weight: 700;
-  margin-inline-end: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-& .line {
-  width: 100%;
-  height: 1px;
-  background-color: hsla(0, 0%, 23%, 1);
-} */
-
-/* .meaning-title {
-  color: hsla(0, 0%, 46%, 1);
-}
-
-.meaning-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.punto {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: var(--purple-clr);
-  border-radius: 50%;
-} */

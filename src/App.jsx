@@ -6,10 +6,7 @@ import Main from './components/Main'
 const App = () => {
   const [font, setFont] = React.useState("'inter', Arial, sans-serif")
 
-  const handleFont = value => {
-    console.log(value)
-    return setFont(value)
-  }
+  const handleFont = value => setFont(value)
 
   return (
     <>

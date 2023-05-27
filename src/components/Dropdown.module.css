@@ -55,13 +55,4 @@
 
 .menu li:hover {
   color: var(--ff-selection-clr);
-  /* transform: scale(1.1); */
 }
-
-/* .serif {
-  font-family: var(--ff-serif);
-}
-
-.mono {
-  font-family: var(--ff-mono);
-} */

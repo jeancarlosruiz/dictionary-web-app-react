@@ -8,8 +8,6 @@ const Dropdown = ({ handleFont }) => {
   const [selected, setSelected] = React.useState('San Serif')
   const [isActive, setIsActive] = React.useState(false)
 
-  console.info('Dropdown render')
-
   const handleFontChanges = React.useCallback((value) => {
     const fontSelected = value
 
