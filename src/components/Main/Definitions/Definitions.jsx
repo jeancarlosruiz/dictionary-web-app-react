@@ -4,6 +4,8 @@ import Examples from './Examples'
 import Synonyms from './Synonyms'
 
 const Definitions = ({ meaning }) => {
+  const synonyms = meaning.synonyms.join(', ')
+
   return (
     <div>
       <h3 className={styles.meaning}>Meaning</h3>
@@ -17,7 +19,7 @@ const Definitions = ({ meaning }) => {
           </li>
         ))}
       </ul>
-      {meaning.synonyms.length > 0 && (<Synonyms>{meaning.synonyms.join(', ')}</Synonyms>)}
+      {meaning.synonyms.length > 0 && (<Synonyms>{synonyms}</Synonyms>)}
     </div>
   )
 }

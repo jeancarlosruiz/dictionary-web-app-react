@@ -10,9 +10,7 @@ const App = () => {
 
   return (
     <>
-      <Header
-        handleFont={handleFont}
-      />
+      <Header handleFont={handleFont} />
       <Main fontFamily={font} />
     </>
   )

@@ -1,3 +1,4 @@
+// Hide an element visually, but keep it accessible to screen readers.
 export const hiddenStyles = {
   display: 'inline-block',
   position: 'absolute',

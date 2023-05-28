@@ -6,7 +6,7 @@ import Theme from './Theme'
 import style from './Header.module.css'
 import { ReactComponent as Logo } from '../../../images/logo.svg'
 
-const Header = ({ handleFont, themeSwitcher }) => {
+const Header = ({ handleFont }) => {
   return (
     <header className={style.header}>
       <Logo />
@@ -14,7 +14,7 @@ const Header = ({ handleFont, themeSwitcher }) => {
         <Dropdown
           handleFont={handleFont}
         />
-        <Theme themeSwitcher={themeSwitcher} />
+        <Theme />
       </div>
     </header>
   )
