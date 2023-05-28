@@ -4,7 +4,7 @@ import Dropdown from './Dropdown'
 import Theme from './Theme'
 
 import style from './Header.module.css'
-import { ReactComponent as Logo } from '../../public/images/logo.svg'
+import { ReactComponent as Logo } from '../../../images/logo.svg'
 
 const Header = ({ handleFont, themeSwitcher }) => {
   return (

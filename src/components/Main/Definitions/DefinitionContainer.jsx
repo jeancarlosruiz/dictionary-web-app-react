@@ -1,10 +1,12 @@
 import React from 'react'
+
 import styles from './DefinitionContainer.module.css'
-import Loading from './Loading'
-import Error from './Error'
+
+import Loading from '../../Loading/Loading'
+import Error from '../../Error/Error'
 import Pronunciation from './Pronunciation'
 import Meanings from './Meanings'
-import Source from './Source'
+import Source from '../Source/Source'
 
 const DefinitionContainer = ({ data, status }) => {
   return (

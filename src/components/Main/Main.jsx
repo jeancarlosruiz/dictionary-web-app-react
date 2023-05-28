@@ -1,10 +1,10 @@
 import React from 'react'
 
-import SearchForm from './SearchForm'
-import DefinitionContainer from './DefinitionContainer'
+import SearchForm from './Search/SearchForm'
+import DefinitionContainer from '../Main/Definitions/DefinitionContainer'
 
-import { ENDPOINT } from '../utils/endpoint'
-import { hiddenStyles } from '../utils/visuallyHidden'
+import { ENDPOINT } from '../../utils/endpoint'
+import { hiddenStyles } from '../../utils/visuallyHidden'
 import styles from './Main.module.css'
 
 const Main = ({ fontFamily }) => {

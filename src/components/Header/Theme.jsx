@@ -1,8 +1,8 @@
 import React from 'react'
-import { useDarkMode } from '../utils/useDarkMode'
+import { useDarkMode } from '../../utils/useDarkMode'
 
-import VisuallyHidden from './VisuallyHidden'
-import { ReactComponent as Moon } from '../../public/images/icon-moon.svg'
+import VisuallyHidden from '../VisuallyHidden'
+import { ReactComponent as Moon } from '../../../images/icon-moon.svg'
 import styles from './Theme.module.css'
 
 const Theme = () => {

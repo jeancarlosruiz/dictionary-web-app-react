@@ -1,9 +1,9 @@
 import React from 'react'
 
-import VisuallyHidden from './VisuallyHidden'
+import VisuallyHidden from '../../VisuallyHidden'
 
-import { hiddenStyles } from '../utils/visuallyHidden'
-import { ReactComponent as SearchIcon } from '../../public/images/icon-search.svg'
+import { hiddenStyles } from '../../../utils/visuallyHidden'
+import { ReactComponent as SearchIcon } from '../../../../images/icon-search.svg'
 import styles from './SearchForm.module.css'
 
 const SearchForm = ({ setWord, status }) => {

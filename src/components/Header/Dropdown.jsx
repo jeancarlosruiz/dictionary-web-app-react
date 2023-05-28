@@ -1,8 +1,8 @@
 import React from 'react'
 
 import styles from './Dropdown.module.css'
-import { fontFamilyObj } from '../utils/fontFamilyObj'
-import { ReactComponent as Arrow } from '../../public/images/icon-arrow-down.svg'
+import { fontFamilyObj } from '../../utils/fontFamilyObj'
+import { ReactComponent as Arrow } from '../../../images/icon-arrow-down.svg'
 
 const Dropdown = ({ handleFont }) => {
   const [selected, setSelected] = React.useState('San Serif')
